@@ -1,0 +1,162 @@
+body
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+}
+.a
+{
+	font-family:'Times New Roman';
+	font-size: 20px;
+	margin: 0 50px 0 0;
+}
+.slideshow-container
+{
+	max-width: 400px;
+	max-height: 1000px;
+	position: relative;
+	margin: auto;
+	color: black;
+}
+.mySlides
+{
+	display: none;
+	border: solid 10px;
+	border-color: darkslategrey;
+}
+.fade 
+{
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+img 
+{
+	vertical-align: middle;
+}
+.imgfade
+{
+	width:100%;
+}
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 40%;
+	width: auto;
+	padding: 13px;
+	color: white;
+	font-size: 30px;
+	transition: 1s ease;
+  }
+.next:hover
+{
+	color: #ff751a;
+	text-decoration: none;
+	opacity: 100%;
+}
+.prev:hover
+{
+	color: #ff751a;
+	text-decoration: none;
+	opacity: 100%;
+}
+  .next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+	background-color: black;
+	opacity: 50%;
+  }
+  .prev {
+	left: 0;
+	border-radius: 3px 0 0 3px;
+	background-color: black;
+	opacity: 50%;
+  }
+
+  .numbertext {
+	color: grey;
+	font-size: 15px;
+	padding:20px 30px;
+	position: absolute;
+	top: 0;
+  }
+
+  .dot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: black;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+  }
+  
+  .ativo, .dot:hover {
+	background-color: #ff751a;
+  }
+  
+  @-webkit-keyframes fade {
+	from {opacity: .4} 
+	to {opacity: 1}
+  }
+  
+  @keyframes fade {
+	from {opacity: .4} 
+	to {opacity: 1}
+  }
+  @media only screen and (max-width: 300px) {
+	.prev, .next,.text {font-size: 7px}
+  }
+  .menuside
+{
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	left: 0;
+	background-color: #111;
+	overflow-x: hidden;		
+	transition: 0.5s;
+	padding-top: 60px;
+	opacity: 100%;
+}
+.menuside a {
+	padding: 8px 8px 30px 32px;
+	text-decoration: none;
+	font-size: 30px;
+	color: grey;
+	display: block;
+	transition: 0.3s;
+  }
+  
+  .menuside a:hover {
+	color: #ff751a;
+  }
+  .menuside .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+  }
+  .dark
+  {
+	display: none;
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	z-index: 99;
+	top: 0;
+	left: 0;
+	background-color: #111;
+	opacity: 0;
+  }
+  
+  @media screen and (max-height: 450px) {
+	.menuside {padding-top: 15px;}
+	.menuside a {font-size: 18px;}
+  }
