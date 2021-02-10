@@ -3,49 +3,118 @@
 <head>
 
   <link rel="stylesheet" type="text/CSS"
-href="Estilo.css">
+href="CSS/Estilo.css">
+<link rel="stylesheet" type="text/CSS"
+href="CSS/bootstrap.min.css">
   <meta charset="UTF-8"; type=text/html>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 
-<body class="body">
+<body>
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style="z-index: 1;">
+    <div class="container">
+      <span style="font-size:30px;cursor:pointer;padding: 0 100px 0 0;" onclick="openNav()">&#9776;</span>
+      
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="a nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="a nav-link" href="#">Movies</a>
+        </li>
+        <li class="nav-item">
+          <a class="a nav-link" href="#">About me</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
- <div class="div1">
-  <img src="IMG/ARTE.jpg"; class="IMG1">
- </div>
+  <!-- Menu Side -->
+  <div class="dark" id="dark">
+  </div>
+  <div id="mySidenav" class="menuside">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">Home</a>
+    <a href="#">Movies</a>
+    <a href="#">About Me</a>
+  </div>
+  
 
-<div class="side">
-<ul>
-  <li><a class="active" href="Index.html">Home</a></li>
-  <li><a href="aboutme.html">Sobre mim</a></li>
-</ul>
-</div>
- 
- <div class="center">
- <div class="banner">
- <a href="Rocky.html"><img src="IMG/ROCKY(1976).jpg"; class="bannerimg"></a>
- <center><p class="fontbanner">Rocky de 1976 ganhou 3 óscars<br> pela atuação incrivel de Silvester Stallone e por sua história emocionante.</p></center>
- </div>
- <div class="banner">
- <a href=""><img src="IMG/IMG1.jpg"; class="bannerimg"></a>
- <center><p class="fontbanner">aaaaaaaaaaaaaaaaaaaaaaaaaa<br>aaaaaaaaaaaaaaaaaaaaaa<br>aaaaaaaa</p></center>
- </div>
- <div class="banner">
- <a href=""><img src="IMG/IMG1.jpg"; class="bannerimg"></a>
- <center><p class="fontbanner">aaaaaaaaaaaaaaaaaaaaaaaaaa<br>aaaaaaaaaaaaaaaaaaaaaa<br>aaaaaaaa</p></center>
- </div>
- <div class="banner">
- <a href=""><img src="IMG/IMG1.jpg"; class="bannerimg"></a>
- <center><p class="fontbanner">aaaaaaaaaaaaaaaaaaaaaaaaaa<br>aaaaaaaaaaaaaaaaaaaaaa<br>aaaaaaaa</p></center>
- </div>
-  <div class="banner">
- <a href=""><img src="IMG/IMG1.jpg"; class="bannerimg"></a>
- <center><p class="fontbanner">aaaaaaaaaaaaaaaaaaaaaaaaaa<br>aaaaaaaaaaaaaaaaaaaaaa<br>aaaaaaaa</p></center>
- </div>
-  <div class="banner">
- <a href=""><img src="IMG/IMG1.jpg"; class="bannerimg"></a>
- <center><p class="fontbanner">aaaaaaaaaaaaaaaaaaaaaaaaaa<br>aaaaaaaaaaaaaaaaaaaaaa<br>aaaaaaaa</p></center>
- </div>
- </div>
- 
+  <!--Slideshow-->
+  <div class="container" style="z-index: 6;">
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+       <div class="numbertext">1 / 3</div>
+       <a href="#"><img src="CSS/IMG/ROCKY(1976).jpg" class="imgfade"><a>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="CSS/IMG/CLOCKWORKORANGE(1971).png" class="imgfade">
+       </div>
+       <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="CSS/IMG/MANK(2020).png" class="imgfade">
+       </div>
+       <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+       <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+       <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+      </div>
+
+  </div>
+<!--Script-->
+<script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+  function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+  function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length)
+      {
+        slideIndex = 1
+      }    
+      if (n < 1)
+      {
+        slideIndex = slides.length
+      }
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none"; 
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" ativo", "");
+      }
+      slides[slideIndex-1].style.display = "block"; 
+      slides[slideIndex-1].style.opacity = 1; 
+      dots[slideIndex-1].className += " ativo";
+    }
+  function openNav() {
+      document.getElementById("mySidenav").style.width = "300px";
+      document.getElementById("dark").style.display = "block";
+      document.getElementById("dark").style.opacity = "80%";
+    }
+
+  function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("dark").style.display = "none";
+    }
+    
+    
+    
+</script>
 </body>
 </html>
