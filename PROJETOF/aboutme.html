@@ -3,30 +3,89 @@
 <head>
 
   <link rel="stylesheet" type="text/CSS"
-href="EstiloPag.css">
+href="CSS/Estilo.css">
+<link rel="stylesheet" type="text/CSS"
+href="CSS/bootstrap.min.css">
   <meta charset="UTF-8"; type=text/html>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <title>About Me</title>
 </head>
 
-<body>
- <div class="div1">
-  <img src="IMG/ARTE.jpg"; class="IMG1">
- </div>
+<body style="background-color: rgba(211, 213, 214, 0.918);">
 
-<div class="side">
-<ul class="ul">
-  <li class="li"><a href="Index.html">Home</a></li>
-  <li class="li"><a class="active" href="aboutme.html">Sobre mim</a></li>
-</ul>
-</div>
- 
- <div class="big">
- <p>
- <div class="text">
- <h1>Sobre mim</h1>
- <p>Me chamo João Vitor e gosto muito de assistir filmes, estou aprendendo a criar sites então podem existir erros nesta página,<br>se você achar algum por favor me avise.XD</p>
-<hr class="end">
-<img src="IMG/sakuradance.gif"; class="sak">
-</p></div></p>
-</div>
+<div class="big">
+  <!--Navbar-->
+  <div class="fluid-container navbarra">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbarra2">
+      <span href="javascript:void(0)" class="span1" style="cursor:pointer;" onclick="openNav()">&#9776;</span>
+      
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="a nav-link" href="Index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="a nav-link" href="#">Philosophy</a>
+        </li>
+        <li class="nav-item">
+          <a class="a nav-link" href="#">Logosophy</a>
+        </li>
+        <li class="nav-item">
+          <a class="a nav-link" href="Movies.html">Movies</a>
+        </li>
+        <li class="nav-item">
+          <a class="a nav-link" id="ativo2" href="#">About me</a>
+        </li>
+      </ul>
+  </nav>
+  </div>
+
+  <!-- Menu Side -->
+  <div class="dark" id="dark">
+  </div>
+  <div id="mySidenav" class="menuside">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="Index.html">Home</a>
+    <a href="#">Philosophy</a>
+    <a href="#">Logosophy</a>
+    <a href="Movies.html">Movies</a>
+    <a href="#" id="ativo2">About Me</a>
+  </div>
+  
+  <div class="container-fluid centertext" style="max-width: 60%;font-size: 1vw;">
+    <h1 style="text-align: center;margin-bottom: 10%;font-size: 3vw;">João Vitor de Oliveira Mendes</h1><p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspMy name is João, i'm 17 y/o and i'm from Belo Horizonte - Minas Gerais, Brazil. I'm currently in the last year at High School at Cotemig, and i long for a Web Developer career in the future. Ever since i was a child i've always been attracted to technology, but only when i started studying in my college i knew i was going to be a programmer. </p>
+    <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspThis website was created to test my front-end development skills as I practice my english and challenge my technical writing. The content will be based on extracurricular knowledge that i like studying such as Philosophy, Logosophy and Movie analysis.
+      This website may contain bugs, misspelling words or visual glitches, if you find any of those please contact me by my socials. The website base code is available at my github, all help and suggestions are welcome.</p><hr>
+      <h4 style="text-align: center;margin-bottom: 3%;font-size: 2vw;">Competences</h4>
+    <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<ul><li>Object Oriented Programming in C#, PHP and Java</li><li>Front-end development using JavaScript, Html, Css and Bootstrap</li><li>Computer maintenance and configuration</li><li>MySql Database</li><li>Google Documents</li><li>Microsoft Office</li></ul></p><hr>
+      <h4 style="text-align: center;margin-bottom: 3%;font-size: 2vw;">Hobbies</h4>
+    <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspI love to watch all kinds of movies, i try to understand and interpret the maximum of them, i've made a few cinema courses about the pre sound era and how documentaries are made. Besides that i love playing chess and studie philosophy, actives that really challenge my mind. And for the last i studie Logosophy, a science created by Carlos Bernardo Gonzáles Pecotche that studies the human mind, the thoughts and values, and the self knowlledge that we need to be a bit better everyday<hr>
+      <br>
+      <h4 style="text-align: center;margin-bottom: 3%;font-size: 2vw;">Socials</h4>
+    <p>
+      <ul style="list-style-type: none;">
+      <li><a href="https://www.linkedin.com/in/jo%C3%A3o-vitor-de-oliveira-mendes-6874b11b3/" style="font-size: 1vw;color: darkslategrey;">Linkedin</a></li>
+      <li><a href="https://github.com/JoaoVitorOliMendes" style="font-size: 1vw;color: darkslategrey;">GitHub</a></li>
+      <li><a href="" style="font-size: 1vw;color: darkslategrey;">joaovitor.oli.mendes@gmail.com</a></li>
+      </ul>
+      <hr>
+    </p>
+    <br>
+  </div>
+
+<!--Script-->
+<script>
+  function openNav() {
+      document.getElementById("mySidenav").style.width = "30%";
+      document.getElementById("dark").style.display = "block";
+      document.getElementById("dark").style.opacity = "80%";
+    }
+
+  function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("dark").style.display = "none";
+    }
+</script>
 </body>
 </html>
