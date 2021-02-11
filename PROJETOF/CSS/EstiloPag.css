@@ -1,105 +1,93 @@
-.div1 {
-   margin-left:2%;
-   margin-top:40px;
-   width:1200px;
-   height:300px;
-}
-.IMG1 {
-	height:100%;
-	width:100%;
-}
-.big {
-	right:-150px;
-	height:80%;
-	width:1100px;
-	position:relative;
-}
-.text {
-	width:500px;
-	height:600px;
-	margin-left:50px;
-	margin-top:100px;
-	position:relative;
-}
-.ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #262626;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-}
-
-.li {
-  float: top;
-}
-
-.li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 16px 14px;
-  text-decoration: none;
-}
-
-.li a:hover {
-  background-color: #ff751a;
-}
-
-.active {
-  background-color: #ff3300;
-}
-.side {
-	height:1000px;
-	width:100px;
-	margin-left:0;
-	margin-top:75px;
-	z-index:1;
-	position:absolute;
-}
-.end {
-	width:900px;
-	position:relative;
-	margin-bottom:2%;
-}
-.sak {
-	width:100px;
-	height:100px;
-	margin-right:100px;
-	float:right;
-}
-.imgrockysteps {
-	right:-500px;
-    top:100px;
-	width:441px;
-	height:272px;
-	position:absolute;
-	float:right;
-	border-style:solid;
-	color:black;
+body
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
 }
 h4 {
-	font: arial;
+	font-family: 'Times New Roman', Times, serif;
 	font-size:20;
 }
 label {
-	font: arial;
+	font-family: 'Times New Roman', Times, serif;
 	font-size:16;
 }
 p {
-	font: arial;
+	font-family: 'Times New Roman', Times, serif;
 	font-size:16;
 }
 h1 {
-	font: arial;
+	font-family: 'Times New Roman', Times, serif;
 	font-size:24;
 }
-body {
-	margin:auto;
-	max-width:1500px;
-	margin-top:2%;
-	background-image: url("IMG/BGIMG.jpg");
-	background-color:white;
+.a
+{
+	font-family:'Times New Roman';
+	font-size: 2vw;
+	margin: 0 50px 0 0;
 }
+.imgright
+{
+	max-width: 350px;
+	display: inline-flex;
+	right: 50%;
+	box-shadow: 60px black;
+	padding: 10px;
+	border: solid black;
+}
+li
+{
+	list-style: none;
+}
+.menuside
+{
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	left: 0;
+	background-color: #111;
+	overflow-x: hidden;		
+	transition: 0.5s;
+	padding-top: 60px;
+	opacity: 100%;
+	font-family: 'Times New Roman', Times, serif;
+}
+.menuside a {
+	padding: 8px 8px 30px 32px;
+	text-decoration: none;
+	font-size: 30px;
+	color: grey;
+	display: block;
+	transition: 0.3s;
+  }
+  
+  .menuside a:hover {
+	color: #ff751a;
+  }
+  .menuside .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+  }
+  .dark
+  {
+	display: none;
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	z-index: 99;
+	top: 0;
+	left: 0;
+	background-color: #111;
+	opacity: 0;
+  }
+  
+  @media screen and (max-height: 450px) {
+	.menuside {padding-top: 15px;}
+	.menuside a {font-size: 18px;}
+  }
