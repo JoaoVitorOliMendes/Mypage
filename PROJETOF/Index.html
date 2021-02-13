@@ -2,7 +2,7 @@
 
 <head>
 
-  <link rel="stylesheet" type="text/CSS"
+<link rel="stylesheet" type="text/CSS"
 href="CSS/Estilo.css">
 <link rel="stylesheet" type="text/CSS"
 href="CSS/bootstrap.min.css">
@@ -10,6 +10,7 @@ href="CSS/bootstrap.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="icon" type="image" href="">
 </head>
 
 <body style="background-color: rgba(211, 213, 214, 0.918);">
@@ -26,7 +27,7 @@ href="CSS/bootstrap.min.css">
           <a class="a nav-link" href="#">Philosophy</a>
         </li>
         <li class="nav-item">
-          <a class="a nav-link" href="#">Logosophy</a>
+          <a class="a nav-link" href="Logosofia.html">Logosophy</a>
         </li>
         <li class="nav-item">
           <a class="a nav-link" href="Movies.html">Movies</a>
@@ -45,25 +46,23 @@ href="CSS/bootstrap.min.css">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <a href="">Home</a>
     <a href="#">Philosophy</a>
-    <a href="#">Logosophy</a>
+    <a href="Logosofia.html">Logosophy</a>
     <a href="Movies.html">Movies</a>
     <a href="aboutme.html">About Me</a>
   </div>
-<!--Script-->
-<script>
-  function openNav() {
-      document.getElementById("mySidenav").style.width = "300px";
-      document.getElementById("dark").style.display = "block";
-      document.getElementById("dark").style.opacity = "80%";
-    }
 
-  function closeNav() {
-      document.getElementById("mySidenav").style.width = "0";
-      document.getElementById("dark").style.display = "none";
-    }
-    
-    
-    
+  <!-- Content -->
+  <div class="container-fluid" style="max-width: 70%;font-size: 1vw;margin-top: -5%;">
+    <blockquote class="tweet-this"><p id="qt">
+      <span id="pqt"></span></p>
+    </blockquote>
+  </div>
+
+<!--Script-->
+<script src="JS/main.js"></script>
+<script>
+  quote();
+var tempo = setInterval(quote, 10000);
 </script>
 </body>
 </html>
