@@ -13,8 +13,9 @@ href="CSS/bootstrap.min.css">
 </head>
 
 <body style="background-color: rgba(211, 213, 214, 0.918);">
-  <!--Navbar-->
 <div class="big">
+
+  <!--Navbar-->
   <div class="fluid-container navbarra">
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbarra2">
       <span href="javascript:void(0)" class="span1" style="cursor:pointer;" onclick="openNav()">&#9776;</span>
@@ -27,10 +28,10 @@ href="CSS/bootstrap.min.css">
           <a class="a nav-link" href="#">Philosophy</a>
         </li>
         <li class="nav-item">
-          <a class="a nav-link" href="Logosofia.html">Logosophy</a>
+          <a class="a nav-link" id="ativo2" href="#">Logosophy</a>
         </li>
         <li class="nav-item">
-          <a class="a nav-link"  id="ativo2" href="#">Movies</a>
+          <a class="a nav-link" href="Movies.html">Movies</a>
         </li>
         <li class="nav-item">
           <a class="a nav-link" href="aboutme.html">About me</a>
@@ -46,48 +47,26 @@ href="CSS/bootstrap.min.css">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <a href="Index.html">Home</a>
     <a href="#">Philosophy</a>
-    <a href="Logosofia.html">Logosophy</a>
-    <a href="#" id="ativo2">Movies</a>
+    <a href="#" id="ativo2">Logosophy</a>
+    <a href="Movies.html">Movies</a>
     <a href="aboutme.html">About Me</a>
   </div>
 
-  
-  <!--Slideshow-->
-<div class="centro">
-<div class="center">
-  <strong><i>
-    Analysis
-  </i></strong>
-</div>
   <div class="container">
-    <div class="slideshow-container">
-
-      <div class="mySlides fade">
-       <div class="numbertext">1 / 3</div>
-       <a href="#"><img src="CSS/IMG/CLOCKWORKORANGE(1971).png" class="imgfade"></a>
+    <div class="banner">
+      <a href=""><img src="CSS/IMG/FELICIDADE.jpg"; class="bannerimg"></a>
+      <h4>Happiness</h4><h6 class="fontbanner">Where to find happiness and how to cultivate it.</h6>
       </div>
-      <div class="mySlides fade">
-        <div class="numbertext">2 / 3</div>
-        <a href="Rocky.html"><img src="CSS/IMG/ROCKY(1976).jpg" class="imgfade"></a>
-       </div>
-       <div class="mySlides fade">
-        <div class="numbertext">3 / 3</div>
-        <a href="#"><img src="CSS/IMG/MANK(2020).png" class="imgfade"></a>
-       </div>
-       <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-       <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <div class="banner">
+      <a href=""><img src="CSS/IMG/NATURE.jpg"; class="bannerimg"></a>
+      <h4>God</h4><h6 class="fontbanner">Who is God according to Logosophy.</h6>
       </div>
-    <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span> 
-        <span class="dot" onclick="currentSlide(2)"></span> 
-        <span class="dot" onclick="currentSlide(3)"></span> 
+    <div class="banner">
+      <a href=""><img src="CSS/IMG/ESPELHO.jpg"; class="bannerimg"></a>
+      <h4>Self knowledge</h4><h6 class="fontbanner">How to be better day by day.</h6>
       </div>
-
   </div>
 </div>
-</div>
-<!--Script-->
 <script src="JS/main.js"></script>
-<script>showSlides(slideIndex)</script>
 </body>
 </html>
