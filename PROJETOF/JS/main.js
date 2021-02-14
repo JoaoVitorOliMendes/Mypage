@@ -10,6 +10,7 @@ function closeNav() {
   }
 
   var quot = document.getElementById("qt");
+  var tw = document.getElementsByClassName("tweet-this");
 
   function quote()
   {
@@ -35,7 +36,14 @@ function closeNav() {
               break;
       }
       r = null;
+      tw[0].style.opacity = 1;
     }
+  function fadeq()
+  {
+    tw[0].style.transition = "opacity 1s";
+    tw[0].style.opacity = 0, 1000;
+    setTimeout(quote, 1000);
+  }
 
   //Slides
   var slideIndex = 1;
