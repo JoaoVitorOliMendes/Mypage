@@ -10,14 +10,16 @@ href="CSS/bootstrap.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <link rel="icon" type="image" href="">
+  <link rel="icon" type="image" href="CSS/IMG/LOGO.png">
+  <title>MyPage</title>
 </head>
 
 <body style="background-color: rgba(211, 213, 214, 0.918);">
+<div class="big">
   <!--Navbar-->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style="z-index: 6;">
-    <div class="container">
-      <span style="font-size:3vw;cursor:pointer;margin-right:5%;color:darkslategrey" onclick="openNav()">&#9776;</span>
+  <div class="fluid-container navbarra">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbarra2">
+      <span href="javascript:void(0)" class="span1" style="cursor:pointer;" onclick="openNav()">&#9776;</span>
       
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
@@ -36,8 +38,8 @@ href="CSS/bootstrap.min.css">
           <a class="a nav-link" href="aboutme.html">About me</a>
         </li>
       </ul>
-    </div>
   </nav>
+</div>
 
   <!-- Menu Side -->
   <div class="dark" id="dark">
@@ -52,11 +54,12 @@ href="CSS/bootstrap.min.css">
   </div>
 
   <!-- Content -->
-  <div class="container-fluid" style="max-width: 70%;font-size: 1vw;margin-top: -5%;">
+  <div class="container-fluid conte" style="max-width: 70%;font-size: 1vw;">
     <blockquote class="tweet-this"><p id="qt">
       <span id="pqt"></span></p>
     </blockquote>
   </div>
+</div>
 
 <!--Script-->
 <script src="JS/main.js"></script>
