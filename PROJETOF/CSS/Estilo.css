@@ -111,12 +111,13 @@ img
 	.prev, .next,.text {font-size: 1vw}
 	.a {font-size: 2vw;display: block;margin-bottom: 5%;margin-left: -10%;}
 	.span1{display: none;}
-	.navbarra2{position: absolute;width:17%;margin:0;height: 200%;}
+	.navbarra{display: flex;align-items: flex-start;justify-content: flex-start;max-width:17%;height: 100%;position: fixed;}
+	.navbarra2{margin:0;height: 100%;}
+	.conte{max-width: 80%;max-width: 50%;position: absolute;top:10%;left: 30%;}
 	.centro{position: absolute;top:5%;left: 10%;width: 100%;}
 	.centertext{position: absolute;top:7%;right: 10%;}
 	.slideshow-container{max-width: 35%;}
 	.numbertext{font-size: 1vw;left:-8%}
-	.conte{position: absolute;top:33%;left: 20%;width: 100%;}
   }
   .menuside
 {
@@ -257,11 +258,23 @@ blockquote {
     width:20vw;
 	height: 25vw;
 	text-align: center;
-	float: left;
 	margin-left: 5%;
 	margin-bottom: 40%;
 }
 h4
 {
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 1vw;
+}
+.conte
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.p
+{
+	text-align: justify;
+	font-size: 1.5vw;
 	font-family: 'Times New Roman', Times, serif;
 }
