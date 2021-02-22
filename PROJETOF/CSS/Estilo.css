@@ -278,3 +278,52 @@ h4
 	font-size: 1.5vw;
 	font-family: 'Times New Roman', Times, serif;
 }
+.gridmain
+{
+	height:40vw;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-template-areas: 
+	"box1 box2"
+	"box3 box3";
+}
+.gridmain div
+{
+	height: 95%;
+	width: 95%;
+	display: flex;
+	justify-content: flex-end;
+}
+.gridmain a
+{
+	text-decoration: none;
+	color:black;
+}
+.gridmain a:hover
+{
+	opacity: 80%;
+	transition: 0.5s ease;
+	text-decoration: none;
+	color:rgb(41, 41, 41);
+}
+.box1{
+background-color: dimgrey;
+border:ridge rgb(94, 94, 94) 0.7vw;
+grid-area: box1;
+}
+.box2{
+background-color: dimgrey;
+border:ridge rgb(94, 94, 94) 0.7vw;
+grid-area: box2;
+}
+.box3{
+background-color: dimgrey;
+border:ridge rgb(94, 94, 94) 0.7vw;
+grid-area: box3;
+}
+.gridimg
+{
+	width: 60%;
+	height: 100%;
+}
