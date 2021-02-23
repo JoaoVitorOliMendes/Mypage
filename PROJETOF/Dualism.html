@@ -1,0 +1,80 @@
+<html>
+
+<head>
+
+  <link rel="stylesheet" type="text/CSS"
+href="CSS/Estilo.css">
+<link rel="stylesheet" type="text/CSS"
+href="CSS/bootstrap.min.css">
+  <meta charset="UTF-8"; type=text/html>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="icon" type="image" href="CSS/IMG/LOGO.png">
+  <title>MyPage</title>
+</head>
+
+<body class="body">
+
+<div class="big">
+  <!--Navbar-->
+  <div class="fluid-container navbarra">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbarra2">
+      <span href="javascript:void(0)" class="span1" onclick="openNav()">&#9776;</span>
+      
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="a nav-link" href="Index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="a nav-link" href="Philosophy.html" id="ativo2">Philosophy</a>
+        </li>
+        <li class="nav-item">
+          <a class="a nav-link" href="Logosofia.html">Logosophy</a>
+        </li>
+        <li class="nav-item">
+          <a class="a nav-link" href="Movies.html">Movies</a>
+        </li>
+        <li class="nav-item">
+          <a class="a nav-link" href="aboutme.html">About me</a>
+        </li>
+      </ul>
+  </nav>
+  </div>
+
+  <!-- Menu Side -->
+  <div class="dark" id="dark">
+  </div>
+  <div id="mySidenav" class="menuside">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="Index.html">Home</a>
+    <a href="Philosophy.html" id="ativo2">Philosophy</a>
+    <a href="Logosofia.html">Logosophy</a>
+    <a href="Movies.html">Movies</a>
+    <a href="aboutme.html">About Me</a>
+  </div>
+  
+  <div class="container-fluid centertext context">
+    <h1 class="title">Dualism</h1>
+    <p class="p">
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbspDualism is a philosophical vision about reality. It surged in the XVI century with René Descartes, he affirmed that the human has a thinking mind and an extensive matter, then others philosophers started debating, like David Hume that proposed that the world is divided in fact and value.</p>
+        <p class="p">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspBut only when Christian Wolff proposed the existence of two realities, one material and one espiritual, that this type dualism took place in the world. Other scholars realized that the subject was discussed since the pre-Socratic era. Plato thinks that the world is divided into an ideal world, where the ideas are contained  and a sensitive world, where everything is in constant transformation.</p>
+        <p class="p">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspOver time a lot of discussions were made, and the modern dualism surged. Modern dualism divides reality in our mind, our thoughts, beliefs and feelings, and the world that we relate to. It also implies that the two realities cannot be separated, and the union of both makes a thinking and integral individual.</p>
+        <p class="p">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspIt’s worth also talking about the opposites of dualism. Idealism and materialism were two schools of thought that implied the opposite of dualism. Materialism appeared at first with the stoics, Epicurus and Democritus, they thought that reality is only the world we interact with, no existence of the mental side, everything is composed of matter and thinking is only a phenomenon of the brain. Idealism in another way implies that reality could be only an idea, a conjunct of feelings and thoughts created and interpreted by the brain, the material reality is merely a copy of the ideal.</p>
+  </div>
+
+<!--Script-->
+<script>
+  function openNav() {
+      document.getElementById("mySidenav").style.width = "30%";
+      document.getElementById("dark").style.display = "block";
+      document.getElementById("dark").style.opacity = "80%";
+    }
+
+  function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("dark").style.display = "none";
+    }
+</script>
+</body>
+</html>

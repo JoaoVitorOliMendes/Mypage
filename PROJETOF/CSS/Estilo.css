@@ -4,6 +4,10 @@ body
 	justify-content: center;
 	margin: 0;
 }
+.body
+{
+	background-color: rgba(211, 213, 214, 0.918);
+}
 .a
 {
 	font-family:'Times New Roman';
@@ -221,6 +225,7 @@ ul li a:hover
 	margin-right:5%;
 	color:darkslategrey;
 	text-decoration: none;
+	cursor:pointer;
 }
 blockquote {
 	position: relative;
@@ -326,4 +331,48 @@ grid-area: box3;
 {
 	width: 60%;
 	height: 100%;
+}
+.title
+{
+	text-align: center;
+	margin-bottom: 10%;
+	font-size: 4vw;
+	font-family: 'Times New Roman', Times, serif;
+	font-style: italic;
+}
+.context
+{
+	max-width: 60%;font-size: 1vw;padding: 0 0 5% 0;
+}
+.meimg
+{
+	max-width: 28%;float: right;margin-top: 13vw;padding: 1vw;
+}
+.subtitle
+{
+	text-align: center;margin-bottom: 3%;font-size: 2.5vw;font-style: italic;
+}
+.ulabout
+{
+	font-size: 1.5vw;font-family: 'Times New Roman', Times, serif;
+}
+.socials
+{
+	color: #ff751a;font-size: 1.5vw;
+}
+.socialsa
+{
+	font-size: 1vw;color: white;
+}
+.dots
+{
+	text-align:center
+}
+.bannertitle
+{
+	font-size: 2vw;
+}
+.indexphrase
+{
+	max-width: 70%;font-size: 1vw;
 }
