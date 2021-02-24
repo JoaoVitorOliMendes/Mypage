@@ -91,9 +91,9 @@ img
 
   .dot {
 	cursor: pointer;
-	height: 15px;
-	width: 15px;
-	margin: 0 2px;
+	height: 1vw;
+	width: 1vw;
+	margin: 1vw 2px;
 	background-color: black;
 	border-radius: 50%;
 	display: inline-block;
@@ -113,18 +113,20 @@ img
 	from {opacity: .4} 
 	to {opacity: 1}
   }
-  @media only screen and (max-width: 1000px) {
-	.prev, .next,.text {font-size: 1vw}
-	.a {font-size: 2vw;display: block;margin-bottom: 5%;margin-left: -10%;}
-	.span1{display: none;}
-	.navbarra{display: flex;align-items: flex-start;justify-content: flex-start;max-width:17%;height: 100%;position: fixed;}
-	.navbarra2{margin:0;height: 100%;}
-	.conte{max-width: 80%;max-width: 50%;position: absolute;top:10%;left: 30%;}
-	.centro{position: absolute;top:5%;left: 10%;width: 100%;}
-	.centertext{position: absolute;top:7%;right: 10%;}
-	.slideshow-container{max-width: 35%;}
-	.numbertext{font-size: 1vw;left:-8%}
-  }
+  @media only screen and (max-width: 1200px) {
+	#gridmain{
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+		grid-template-areas: 
+		"box1"
+		"box2"
+		"box3";}
+	.subtitlephilo
+	{
+		font-size: 5vw;
+	}
+
+}
   .menuside
 {
 	height: 100%;
@@ -208,12 +210,6 @@ ul li a:hover
 .navbarra
 {
 	margin: 0 0 5% 0;
-	position: relative;
-}
-.navbarra2
-{
-	margin: 0;
-	max-width: 100%;
 }
 .big
 {
@@ -352,7 +348,7 @@ grid-area: box3;
 }
 .subtitle
 {
-	text-align: center;margin-bottom: 3%;font-size: 2.5vw;font-style: italic;
+	text-align: center;margin-bottom: 3%;font-size: 2.3vw;font-style: italic;
 }
 .ulabout
 {
@@ -378,3 +374,55 @@ grid-area: box3;
 {
 	max-width: 70%;font-size: 1vw;
 }
+.box1 div
+{
+	display: block;
+	font-family: 'Times New Roman', Times, serif;
+	padding: 3%;
+}
+.box2 div
+{
+	display: block;
+	font-family: 'Times New Roman', Times, serif;
+	padding: 3%;
+}
+.box3 div
+{
+	display: block;
+	font-family: 'Times New Roman', Times, serif;
+	padding: 3%;
+}
+.subtitlephilo
+{
+	font-style: italic;
+}
+.mv
+{
+	height: 100%;
+}
+@media only screen and (max-width: 1000px) {
+	.prev, .next,.text {font-size: 1vw}
+	.a {font-size: 3.5vw;margin: 1vw;}
+	.span1{display: none;}
+	.navbarra{height: 20%;width: 100%;justify-content: center;align-items: center;}
+	#indexphrase{max-width: 90%;}
+	.conte blockquote{font-size: 5vw;}
+	.context h1{font-size: 8vw;}
+	.context p{font-size: 4vw;}
+	.slideshow-container{max-width: 35%;}
+	.numbertext{font-size: 1vw;left:-8%}
+	.conte div{width:40vw;height: 50vw;margin-left: 17%;}
+	.conte div h4{font-size: 5vw;}
+	.conte div h6{font-size: 3vw;}
+	#bannerdiv{display: block;}
+	#centertitlemv{font-size: 10vw;}
+	.slideshow-container{width: 40vw;margin-right: 38vw;padding:0;}
+	.slideshow-container div{width: 50vw;margin: 0;}
+	.next, .prev {display:none}
+	.dot{width: 3vw;height: 3vw;}
+	#me{max-width: 50vw;float: none;margin: 0;padding: 5vw;}
+	.context h4{font-size: 6vw;}
+	#ulabout{font-size: 4vw;}
+	.socialsa{font-size: 2vw;}
+	.socials{font-size: 4vw;}
+  }
