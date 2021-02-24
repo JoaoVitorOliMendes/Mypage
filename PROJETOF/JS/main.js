@@ -75,6 +75,6 @@ function closeNav() {
           dots[i].className = dots[i].className.replace(" ativo", "");
       }
       slides[slideIndex-1].style.display = "block"; 
-      slides[slideIndex-1].style.opacity = 1; 
+      slides[slideIndex-1].style.opacity = 0.9; 
       dots[slideIndex-1].className += " ativo";
     }
