@@ -1,0 +1,81 @@
+<html>
+
+<head>
+
+  <link rel="stylesheet" type="text/CSS"
+href="CSS/Estilo.css">
+<link rel="stylesheet" type="text/CSS"
+href="CSS/bootstrap.min.css">
+  <meta charset="UTF-8"; type=text/html>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="icon" type="image" href="CSS/IMG/LOGO.png">
+  <title>MyPage</title>
+</head>
+
+<body class="body">
+
+<div class="big">
+  <!--Navbar-->
+  <div class="fluid-container navbarra">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbarra2">
+      <span href="javascript:void(0)" class="span1" onclick="openNav()">&#9776;</span>
+      
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="a nav-link" href="Index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="a nav-link" href="Philosophy.html" id="ativo2">Philosophy</a>
+        </li>
+        <li class="nav-item">
+          <a class="a nav-link" href="Logosofia.html">Logosophy</a>
+        </li>
+        <li class="nav-item">
+          <a class="a nav-link" href="Movies.html">Movies</a>
+        </li>
+        <li class="nav-item">
+          <a class="a nav-link" href="aboutme.html">About me</a>
+        </li>
+      </ul>
+  </nav>
+  </div>
+
+  <!-- Menu Side -->
+  <div class="dark" id="dark">
+  </div>
+  <div id="mySidenav" class="menuside">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="Index.html">Home</a>
+    <a href="Philosophy.html" id="ativo2">Philosophy</a>
+    <a href="Logosofia.html">Logosophy</a>
+    <a href="Movies.html">Movies</a>
+    <a href="aboutme.html">About Me</a>
+  </div>
+  
+  <div class="container-fluid centertext context">
+    <h1 class="title">The Myth of Sisyphus</h1>
+    <p class="p">
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbspOne of the greek myths that really drew my attention was the myth of Sisyphus, Albert Camus was one of the first one to discuss openly about the legend in the book <b><i>“The Myth of Sisyphus”</i></b>. He described him as the hero of the absurd, for reasons I'll discuss later.</p>
+        <p class="p">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspAccording to the Greeks Sisyphus was the most astute man in the world. In his legend he fooled death and confined it, which prevented people from dying for a while. But when Ares interfered and freed Thanato, the gods condemned him, imprisoning in hell and doing forced labour. Everyday Sisyphus had to push a giant rock to the top of a hill, but when he almost got to the top, the rock rolled again to the bottom, making all his work useless and rewardless.</p>
+        <p class="p">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspAlbert Camus realized that we're not that different from the hero, we live in a disconnect and unmeaning world, and everyday search for clarity and unity and at the end of the day failing to achieve anything, he calls it the absurd. He also noticed that we spend a big part of our lives under the hope of tomorrow, that approaches us to death. So he proposed that we rebel against the search of a reasonable and rational world. Instead of worrying about the future or tomorrow, enjoy at maximum the freedom of the present, even though not knowing or seeking for the real meaning of life, indulging into the absurd of the world.</p>
+        <p class="p">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspAt the end of the book the author introduces us to the myth, and regardless of us Sisyphus is also an absurd human. He lives like us, enjoys his life at maximum but is forced to do a meaningless and senseless work, he knows it, but continues anyway.</p>
+        <p class="p">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspWe can compare the hero to nowadays, workers spend all their lives working and hoping for a better future, that in the end nothing has been achieved. <b><i>“The workman of today works every day in his life at the same tasks, and this fate is no less absurd. But it is tragic only at the rare moments when it becomes conscious.”</i></b></p>
+  </div>
+
+<!--Script-->
+<script>
+  function openNav() {
+      document.getElementById("mySidenav").style.width = "30%";
+      document.getElementById("dark").style.display = "block";
+      document.getElementById("dark").style.opacity = "80%";
+    }
+
+  function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("dark").style.display = "none";
+    }
+</script>
+</body>
+</html>

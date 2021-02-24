@@ -27,6 +27,7 @@ body
 	display: none;
 	border: solid 8px;
 	border-color: darkslategrey;
+	opacity: 0.5;
 }
 .fade 
 {
@@ -42,6 +43,7 @@ img
 .imgfade
 {
 	width:100%;
+	opacity: 0.5;
 }
 .prev, .next {
 	cursor: pointer;
@@ -291,7 +293,7 @@ h4
 	grid-template-rows: 1fr 1fr;
 	grid-template-areas: 
 	"box1 box2"
-	"box3 box3";
+	"box3 .";
 }
 .gridmain div
 {
