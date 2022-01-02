@@ -1,0 +1,14 @@
+{
+  "articles": [
+    {
+      "id": 1,
+      "title": "Democracy",
+      "text": [
+        "Democracy is not a XXI century novelty, we have proof that the system has been used, with major changes, since 510 b.c. when Cysteines led a rebellion against the tyrant Hippias and took over the Athens government, implanting a system of government called <b><i>“demokratia”</i></b>, which in greek means power of the people. He divided Athens in ten units called <b><i>“demos”</i></b> which each one would have a representative in the council. There the meetings were made, each one would make propositions and dabate for how to improve the city and quality of life.",
+        "The Greek democracy is a base for the word concept, because it’s based on two principles: isonomy and isegoria. Isonomy means that every citizen is equal by the law and everyone has to obey the same rules. Isegoria implies that every citizen has the right to vote and be heard when making decisions.",
+        "But in history there's a huge gap between the creation of democracy and the modern days, in the middle age the majority of the world was ruled by kings that were not chosen by their citizens. The nation that changed this course of history was the USA, with the american revolution in 1776, separating themselves from the UK and a few years after stabilizing the country, democracy was implanted, having the firsts elections in 1789. Then the world influenced by America and the illuminist ideas started slowly changing from absolutism to a democratic republic."
+      ],
+      "img": "kjahdaj"
+    }
+  ]
+}
