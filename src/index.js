@@ -5,11 +5,16 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { ThemeProvider } from "@mui/material";
 import theme from "./assets/theming/theme";
+import { HashRouter } from "react-router-dom";
 
 ReactDOM.render(
-  <ThemeProvider theme={theme}>
-    <App />
-  </ThemeProvider>,
+  <React.StrictMode>
+    <HashRouter>
+      <ThemeProvider theme={theme}>
+        <App />
+      </ThemeProvider>
+    </HashRouter>
+  </React.StrictMode>,
   document.getElementById("root")
 );
 
