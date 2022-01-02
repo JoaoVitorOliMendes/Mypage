@@ -1,0 +1,8 @@
+.link {
+  padding: 0 1em;
+  transition: border 500ms linear;
+}
+
+.link:hover {
+  border-bottom: solid 2px #ff751a;
+}

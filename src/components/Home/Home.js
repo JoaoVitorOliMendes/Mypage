@@ -20,10 +20,12 @@ export default function Home() {
 
   return (
     <>
-      <Box className={classes.imgContainer} id="home">
+      <Box className={classes.imgContainer} name="home">
         <Banner />
       </Box>
-      <Articles id="articles" />
+      <div name="articles">
+        <Articles />
+      </div>
     </>
   );
 }
