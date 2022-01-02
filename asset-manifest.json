@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/JoaoVitorOliMendes/Mypage/static/css/main.073c9b0a.css",
+    "main.js": "/JoaoVitorOliMendes/Mypage/static/js/main.3785ecad.js",
+    "static/js/787.2428c2a9.chunk.js": "/JoaoVitorOliMendes/Mypage/static/js/787.2428c2a9.chunk.js",
+    "index.html": "/JoaoVitorOliMendes/Mypage/index.html",
+    "main.073c9b0a.css.map": "/JoaoVitorOliMendes/Mypage/static/css/main.073c9b0a.css.map",
+    "main.3785ecad.js.map": "/JoaoVitorOliMendes/Mypage/static/js/main.3785ecad.js.map",
+    "787.2428c2a9.chunk.js.map": "/JoaoVitorOliMendes/Mypage/static/js/787.2428c2a9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.3785ecad.js"
+  ]
+}
