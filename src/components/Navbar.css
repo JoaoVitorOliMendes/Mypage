@@ -1,8 +1,11 @@
 .link {
+  display: flex;
+  align-items: center;
   padding: 0 1em;
-  transition: border 500ms linear;
+  transition: border 200ms ease;
+  cursor: pointer;
 }
 
 .link:hover {
-  border-bottom: solid 2px #ff751a;
+  border-bottom: solid 4px #ff751a;
 }

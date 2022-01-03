@@ -10,7 +10,7 @@ import "./Navbar.css";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    flexGrow: 1,
+    alignItems: "stretch !important",
   },
 }));
 
@@ -19,28 +19,42 @@ export default function Navbar() {
 
   return (
     <AppBar position="fixed">
-      <Toolbar>
-        <div className="link">
-          <ScLink to="home" spy={true} smooth={true} duration={500}>
-            <Link href="#" underline="none" color="secondary">
-              Home
-            </Link>
-          </ScLink>
-        </div>
+      <Toolbar className={classes.root}>
+        <ScLink
+          to="home"
+          spy={true}
+          smooth={true}
+          duration={500}
+          className="link"
+        >
+          <Link href="#" underline="none" color="secondary">
+            Home
+          </Link>
+        </ScLink>
 
-        <div className="link">
-          <ScLink
-            to="articles"
-            spy={true}
-            smooth={true}
-            duration={500}
-            className="link"
-          >
-            <Link href="#" underline="none" color="secondary">
-              Articles
-            </Link>
-          </ScLink>
-        </div>
+        <ScLink
+          to="articles"
+          spy={true}
+          smooth={true}
+          duration={500}
+          className="link"
+        >
+          <Link href="#" underline="none" color="secondary">
+            Articles
+          </Link>
+        </ScLink>
+
+        <ScLink
+          to="aboutme"
+          spy={true}
+          smooth={true}
+          duration={500}
+          className="link"
+        >
+          <Link href="#" underline="none" color="secondary">
+            About Me
+          </Link>
+        </ScLink>
       </Toolbar>
     </AppBar>
   );

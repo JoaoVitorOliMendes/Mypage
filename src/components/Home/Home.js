@@ -3,6 +3,7 @@ import { makeStyles } from "@mui/styles";
 import { Box } from "@mui/material";
 import Banner from "./Banner";
 import Articles from "./Articles";
+import AboutMe from "./AboutMe";
 
 const useStyles = makeStyles((theme) => ({
   imgContainer: {
@@ -25,6 +26,9 @@ export default function Home() {
       </Box>
       <div name="articles">
         <Articles />
+      </div>
+      <div name="aboutme">
+        <AboutMe />
       </div>
     </>
   );
