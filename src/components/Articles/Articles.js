@@ -16,6 +16,7 @@ const useClasses = makeStyles((theme) => ({
   },
   chip: {
     margin: "0 1% !important",
+    fontWeight: "bold",
   },
 }));
 
@@ -46,6 +47,7 @@ export default function Articles() {
       </Typography>
       <Box>
         <Chip
+          color={subjectArray.length > 1 ? "secondary" : "primary"}
           label="All"
           component="button"
           onClick={() => {
@@ -55,6 +57,7 @@ export default function Articles() {
           clickable
         />
         <Chip
+          color={subjectArray == "Philosophy" ? "secondary" : "primary"}
           label="Philosophy"
           component="button"
           onClick={() => {
@@ -64,6 +67,7 @@ export default function Articles() {
           clickable
         />
         <Chip
+          color={subjectArray == "Logosophy" ? "secondary" : "primary"}
           label="Logosophy"
           component="button"
           onClick={() => {

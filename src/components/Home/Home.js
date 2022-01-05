@@ -3,7 +3,7 @@ import { makeStyles } from "@mui/styles";
 import { Box } from "@mui/material";
 import Banner from "./Banner";
 import Articles from "../Articles/Articles";
-import AboutMe from "./AboutMe";
+import AboutMe from "../AboutMe/AboutMe";
 
 const useStyles = makeStyles((theme) => ({
   imgContainer: {

@@ -1,5 +1,5 @@
 import * as React from "react";
-import { createStyles, withStyles } from "@mui/styles";
+import { makeStyles, withStyles } from "@mui/styles";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faRedditAlien } from "@fortawesome/free-brands-svg-icons";
 import IconButton from "@mui/material/IconButton";
@@ -7,65 +7,71 @@ import banners from "../../data/bannerImg.json";
 import clsx from "clsx";
 import "./Banner.css";
 
-const classes = (theme) =>
-  createStyles({
-    credits: {
-      position: "absolute",
-      bottom: "2.5%",
-      left: "2.5%",
-      display: "flex",
-      alignItems: "center",
-      fontWeight: "bold",
-      color: "#000",
-    },
-  });
+const useClasses = makeStyles((theme) => ({
+  credits: {
+    position: "absolute",
+    bottom: "2.5%",
+    left: "2.5%",
+    display: "flex",
+    alignItems: "center",
+    fontWeight: "bold",
+    color: "#000",
+  },
+}));
 
-class Banner extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      author: "",
-      img: "",
-      id: 0,
-    };
-  }
+const bannersJson = banners.banners;
 
-  bannersJson = banners.banners;
-
-  clock() {
-    const index = Math.floor(Math.random() * 4);
-
-    const img = this.bannersJson[index];
-
-    this.setState({
-      author: img.author,
-      img: img.img,
-      id: img.id,
-    });
-  }
-
-  componentDidMount() {
-    this.clock();
-    this.intervalId = setInterval(this.clock.bind(this), 5000);
-  }
-
-  render() {
-    const { classes } = this.props;
-    const { img } = this.state;
-    const { author } = this.state;
-
-    return (
-      <>
-        <img src={img} className="banner" alt={img} />
-        <span className={classes.credits}>
-          <IconButton color="secondary">
-            <FontAwesomeIcon icon={faRedditAlien} />
-          </IconButton>
-          <span>{author}</span>
-        </span>
-      </>
-    );
-  }
+function getRandomImg() {
+  const index = Math.floor(Math.random() * 4);
+  return bannersJson[index];
 }
 
-export default withStyles(classes)(Banner);
+export default function Banner() {
+  const [img, setImg] = React.useState(getRandomImg());
+  const [render, setRender] = React.useState(true);
+
+  const classes = useClasses();
+
+  React.useEffect(() => {
+    const timer = setInterval(() => {
+      console.log("start fadeout");
+      setRender(false);
+
+      setTimeout(() => {
+        console.log("start fadein");
+        const img = getRandomImg();
+        setImg({
+          img: img.img,
+          id: img.id,
+        });
+
+        setRender(true);
+        setImg({
+          img: img.img,
+          id: img.id,
+          author: img.author,
+        });
+      }, 500);
+    }, 19500);
+
+    return () => clearInterval(timer);
+  });
+
+  return (
+    <>
+      <img
+        src={img.img}
+        className={
+          render ? "banner bannerAnimationIn" : "banner bannerAnimationOut"
+        }
+        alt={img.img}
+      />
+      <span className={classes.credits}>
+        <IconButton color="secondary">
+          <FontAwesomeIcon icon={faRedditAlien} />
+        </IconButton>
+        <span>{img.author}</span>
+      </span>
+    </>
+  );
+}

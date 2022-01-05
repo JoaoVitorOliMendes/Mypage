@@ -18,6 +18,10 @@ var theme = createTheme({
   },
   typography: {
     fontFamily: ["Times New Roman"],
+    body2: {
+      textIndent: "50px",
+      fontSize: 20,
+    },
   },
 });
 
