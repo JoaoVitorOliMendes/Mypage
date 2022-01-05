@@ -34,11 +34,9 @@ export default function Banner() {
 
   React.useEffect(() => {
     const timer = setInterval(() => {
-      console.log("start fadeout");
       setRender(false);
 
       setTimeout(() => {
-        console.log("start fadein");
         const img = getRandomImg();
         setImg({
           img: img.img,

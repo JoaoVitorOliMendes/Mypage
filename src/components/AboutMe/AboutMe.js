@@ -45,10 +45,19 @@ export default function AboutMe() {
             </Paper>
           </Grid>
 
-          <Grid item xs={5}>
-            <Paper elevation={8}>
-              <img src="https://joaovitorolimendes.github.io/Mypage/imgs/me.jpg" />
-            </Paper>
+          <Grid
+            item
+            xs={5}
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <img
+              src="https://joaovitorolimendes.github.io/Mypage/imgs/me.jpg"
+              alt="me"
+            />
           </Grid>
         </Grid>
       </Container>

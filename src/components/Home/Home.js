@@ -1,6 +1,6 @@
 import * as React from "react";
 import { makeStyles } from "@mui/styles";
-import { Box } from "@mui/material";
+import { Box, Divider } from "@mui/material";
 import Banner from "./Banner";
 import Articles from "../Articles/Articles";
 import AboutMe from "../AboutMe/AboutMe";
