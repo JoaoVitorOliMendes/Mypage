@@ -1,0 +1,29 @@
+{
+  "banners": [
+    {
+      "id": 0,
+      "author": "u/vizualhazestudio",
+      "img": "Mypage/banner/0.jpg"
+    },
+    {
+      "id": 1,
+      "author": "u/retro-galaxy",
+      "img": "Mypage/banner/1.jpg"
+    },
+    {
+      "id": 2,
+      "author": "u/GregBeechamStudio",
+      "img": "Mypage/banner/2.jpg"
+    },
+    {
+      "id": 3,
+      "author": "u/myriyevskyy",
+      "img": "Mypage/banner/3.jpg"
+    },
+    {
+      "id": 4,
+      "author": "u/genadyarkhipau",
+      "img": "Mypage/banner/4.jpg"
+    }
+  ]
+}

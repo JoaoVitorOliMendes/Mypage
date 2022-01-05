@@ -1,43 +1,71 @@
 import * as React from "react";
-import { makeStyles } from "@mui/styles";
+import { createStyles, withStyles } from "@mui/styles";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faRedditAlien } from "@fortawesome/free-brands-svg-icons";
 import IconButton from "@mui/material/IconButton";
+import banners from "../../data/bannerImg.json";
+import clsx from "clsx";
+import "./Banner.css";
 
-const useStyles = makeStyles((theme) => ({
-  image: {
-    objectFit: "cover",
-    width: "100%",
-    height: "100%",
-    position: "fixed",
-    zIndex: "-1",
-    backgroundRepeat: "no-repeat",
-    backgroundPositionX: "center",
-    backgroundPositionY: "center",
-  },
-  credits: {
-    position: "absolute",
-    bottom: "2.5%",
-    left: "2.5%",
-    display: "flex",
-    alignItems: "center",
-    fontWeight: "bold",
-    color: "#000",
-  },
-}));
+const classes = (theme) =>
+  createStyles({
+    credits: {
+      position: "absolute",
+      bottom: "2.5%",
+      left: "2.5%",
+      display: "flex",
+      alignItems: "center",
+      fontWeight: "bold",
+      color: "#000",
+    },
+  });
 
-export default function Banner() {
-  const classes = useStyles();
+class Banner extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      author: "",
+      img: "",
+      id: 0,
+    };
+  }
 
-  return (
-    <>
-      <img src="https://i.redd.it/7c3y016opu0z.jpg" className={classes.image} />
-      <span className={classes.credits}>
-        <IconButton color="secondary">
-          <FontAwesomeIcon icon={faRedditAlien} />
-        </IconButton>
-        <span>r/paintings</span>
-      </span>
-    </>
-  );
+  bannersJson = banners.banners;
+
+  clock() {
+    const index = Math.floor(Math.random() * 4);
+
+    const img = this.bannersJson[index];
+
+    this.setState({
+      author: img.author,
+      img: img.img,
+      id: img.id,
+    });
+  }
+
+  componentDidMount() {
+    this.clock();
+    this.intervalId = setInterval(this.clock.bind(this), 5000);
+  }
+
+  render() {
+    const { classes } = this.props;
+    const { img } = this.state;
+    const { author } = this.state;
+
+    return (
+      <>
+        <img src={img} className="banner" alt={img} />
+        <span className={classes.credits}>
+          <IconButton color="secondary">
+            <FontAwesomeIcon icon={faRedditAlien} />
+          </IconButton>
+          <span>{author}</span>
+        </span>
+      </>
+    );
+  }
 }
+
+export default withStyles(classes)(Banner);

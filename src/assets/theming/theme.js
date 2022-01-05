@@ -1,6 +1,6 @@
-import { createTheme } from "@mui/material";
+import { createTheme, responsiveFontSizes } from "@mui/material";
 
-const theme = createTheme({
+var theme = createTheme({
   palette: {
     type: "light",
     primary: {
@@ -16,6 +16,11 @@ const theme = createTheme({
       main: "#ffff00",
     },
   },
+  typography: {
+    fontFamily: ["Times New Roman"],
+  },
 });
+
+theme = responsiveFontSizes(theme);
 
 export default theme;

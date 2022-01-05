@@ -5,7 +5,6 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import { Button } from "@mui/material";
 import { Link as ScLink, animateScroll as scroll } from "react-scroll";
-import Link from "@mui/material/Link";
 import "./Navbar.css";
 
 const useStyles = makeStyles((theme) => ({
@@ -27,9 +26,7 @@ export default function Navbar() {
           duration={500}
           className="link"
         >
-          <Link href="#" underline="none" color="secondary">
-            Home
-          </Link>
+          <Typography color="secondary">Home</Typography>
         </ScLink>
 
         <ScLink
@@ -39,9 +36,7 @@ export default function Navbar() {
           duration={500}
           className="link"
         >
-          <Link href="#" underline="none" color="secondary">
-            Articles
-          </Link>
+          <Typography color="secondary">Articles</Typography>
         </ScLink>
 
         <ScLink
@@ -51,9 +46,7 @@ export default function Navbar() {
           duration={500}
           className="link"
         >
-          <Link href="#" underline="none" color="secondary">
-            About Me
-          </Link>
+          <Typography color="secondary">About Me</Typography>
         </ScLink>
       </Toolbar>
     </AppBar>
