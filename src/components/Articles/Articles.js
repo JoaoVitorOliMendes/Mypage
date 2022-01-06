@@ -17,6 +17,11 @@ const useClasses = makeStyles((theme) => ({
   chip: {
     margin: "0 1% !important",
     fontWeight: "bold",
+    opacity: 0.75,
+    transition: "500ms ease-in-out !important",
+    "&:hover": {
+      opacity: 1,
+    },
   },
 }));
 
