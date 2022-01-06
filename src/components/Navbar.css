@@ -4,6 +4,7 @@
   padding: 0 1em;
   transition: border 200ms ease;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .link:hover {

@@ -2,9 +2,16 @@ import Card from "@mui/material/Card";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
+import { useNavigate } from "react-router-dom";
 
 export default function ArticlesCard(props) {
   const item = props.item;
+
+  const navigate = useNavigate();
+
+  const readMore = () => {
+    navigate("/article", { state: { post: item } });
+  };
 
   return (
     <Card
@@ -19,6 +26,7 @@ export default function ArticlesCard(props) {
             },
           },
         }}
+        onClick={readMore}
       >
         <Typography
           variant="h5"

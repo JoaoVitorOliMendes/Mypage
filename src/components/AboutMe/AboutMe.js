@@ -4,14 +4,14 @@ export default function AboutMe() {
   return (
     <Box
       sx={{
-        height: "100vh",
+        minHeight: "100vh",
         backgroundColor: "background.default",
         padding: "5% 0",
       }}
     >
       <Container maxWidth="xl">
         <Grid container spacing={6}>
-          <Grid item xs={7}>
+          <Grid item xs={12} md={7}>
             <Paper elevation={8} sx={{ padding: "10%" }}>
               <Typography
                 component="div"
@@ -47,7 +47,8 @@ export default function AboutMe() {
 
           <Grid
             item
-            xs={5}
+            xs={12}
+            md={5}
             sx={{
               display: "flex",
               justifyContent: "center",
@@ -57,6 +58,8 @@ export default function AboutMe() {
             <img
               src="https://joaovitorolimendes.github.io/Mypage/imgs/me.jpg"
               alt="me"
+              width="100%"
+              height="100%"
             />
           </Grid>
         </Grid>

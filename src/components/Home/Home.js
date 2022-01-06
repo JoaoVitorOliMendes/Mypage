@@ -5,7 +5,7 @@ import Banner from "./Banner";
 import Articles from "../Articles/Articles";
 import AboutMe from "../AboutMe/AboutMe";
 
-const useStyles = makeStyles((theme) => ({
+const useClasses = makeStyles((theme) => ({
   imgContainer: {
     display: "flex",
     height: "100vh",
@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function Home() {
-  const classes = useStyles();
+  const classes = useClasses();
 
   return (
     <>
