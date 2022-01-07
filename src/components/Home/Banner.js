@@ -41,28 +41,27 @@ export default function Banner() {
         setImg({
           img: img.img,
           id: img.id,
-        });
-
-        setRender(true);
-        setImg({
-          img: img.img,
-          id: img.id,
           author: img.author,
         });
-      }, 500);
-    }, 19500);
+      }, 400);
+    }, 5000);
 
     return () => clearInterval(timer);
   });
+
+  const loadingFinished = () => {
+    setRender(true);
+  };
 
   return (
     <>
       <img
         src={img.img}
+        onLoad={loadingFinished}
         className={
           render ? "banner bannerAnimationIn" : "banner bannerAnimationOut"
         }
-        alt={img.img}
+        alt=""
       />
       <span className={classes.credits}>
         <IconButton color="secondary">
