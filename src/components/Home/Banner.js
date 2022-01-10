@@ -43,8 +43,8 @@ export default function Banner() {
           id: img.id,
           author: img.author,
         });
-      }, 400);
-    }, 5000);
+      }, 450);
+    }, 15000);
 
     return () => clearInterval(timer);
   });

@@ -8,6 +8,8 @@ export default function AboutMe() {
         minHeight: "100vh",
         backgroundColor: "background.default",
         padding: "5% 0",
+        display: "flex",
+        alignItems: "center"
       }}
     >
       <Container maxWidth="xl">
