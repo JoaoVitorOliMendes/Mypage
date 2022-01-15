@@ -3,52 +3,52 @@
     {
       "id": 0,
       "author": "u/vizualhazestudio",
-      "img": "https://joaovitorolimendes.github.io/Mypage/banner/0.jpg"
+      "img": "/banner/0.jpg"
     },
     {
       "id": 1,
       "author": "u/retro-galaxy",
-      "img": "https://joaovitorolimendes.github.io/Mypage/banner/1.jpg"
+      "img": "/banner/1.jpg"
     },
     {
       "id": 2,
       "author": "u/GregBeechamStudio",
-      "img": "https://joaovitorolimendes.github.io/Mypage/banner/2.jpg"
+      "img": "/banner/2.jpg"
     },
     {
       "id": 3,
       "author": "u/myriyevskyy",
-      "img": "https://joaovitorolimendes.github.io/Mypage/banner/3.jpg"
+      "img": "/banner/3.jpg"
     },
     {
       "id": 4,
       "author": "u/genadyarkhipau",
-      "img": "https://joaovitorolimendes.github.io/Mypage/banner/4.jpg"
+      "img": "/banner/4.jpg"
     },
     {
       "id": 5,
       "author": "u/Johannes-Wessmark",
-      "img": "https://joaovitorolimendes.github.io/Mypage/banner/5.jpg"
+      "img": "/banner/5.jpg"
     },
     {
       "id": 6,
       "author": "u/Johannes-Wessmark",
-      "img": "https://joaovitorolimendes.github.io/Mypage/banner/8.jpg"
+      "img": "/banner/8.jpg"
     },
     {
       "id": 7,
       "author": "u/GregBeechamStudio",
-      "img": "https://joaovitorolimendes.github.io/Mypage/banner/6.jpg"
+      "img": "/banner/6.jpg"
     },
     {
       "id": 8,
       "author": "u/TurjanofMiir53",
-      "img": "https://joaovitorolimendes.github.io/Mypage/banner/9.jpg"
+      "img": "/banner/9.jpg"
     },
     {
       "id": 9,
       "author": "u/alonemushroom",
-      "img": "https://joaovitorolimendes.github.io/Mypage/banner/10.jpg"
+      "img": "/banner/10.jpg"
     }
   ]
 }
