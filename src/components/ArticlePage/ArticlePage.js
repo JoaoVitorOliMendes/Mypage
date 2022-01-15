@@ -58,7 +58,7 @@ export default function ArticlePage(props) {
               <Typography variant="body2">{post.text}</Typography>
             )}
             <img
-              src={post.img}
+              src={process.env.PUBLIC_URL + post.img}
               alt={post.img}
               width="75%"
               height="75%"
