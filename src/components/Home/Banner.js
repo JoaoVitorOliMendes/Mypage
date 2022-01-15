@@ -6,6 +6,7 @@ import IconButton from "@mui/material/IconButton";
 import banners from "../../data/bannerImg.json";
 import clsx from "clsx";
 import "./Banner.css";
+import { motion } from "framer-motion";
 
 const useClasses = makeStyles((theme) => ({
   credits: {
@@ -27,47 +28,24 @@ function getRandomImg() {
 }
 
 export default function Banner() {
-  const [img, setImg] = React.useState(getRandomImg());
-  const [render, setRender] = React.useState(true);
 
   const classes = useClasses();
 
   React.useEffect(() => {
     const timer = setInterval(() => {
-      setRender(false);
-
-      setTimeout(() => {
-        const img = getRandomImg();
-        setImg({
-          img: img.img,
-          id: img.id,
-          author: img.author,
-        });
-      }, 450);
     }, 15000);
 
     return () => clearInterval(timer);
   });
 
-  const loadingFinished = () => {
-    setRender(true);
-  };
-
   return (
     <>
-      <img
-        src={img.img}
-        onLoad={loadingFinished}
-        className={
-          render ? "banner bannerAnimationIn" : "banner bannerAnimationOut"
-        }
-        alt=""
-      />
+      
       <span className={classes.credits}>
         <IconButton color="secondary">
           <FontAwesomeIcon icon={faRedditAlien} />
         </IconButton>
-        <span>{img.author}</span>
+        {/* <span>{img.author}</span> */}
       </span>
     </>
   );
