@@ -30,7 +30,7 @@ function getRandomImg() {
 function Banner(props) {
   const { scrollPosition } = props
   const [img, setImg] = React.useState(getRandomImg());
-  const [visible, setVisible] = React.useState(false);
+  const [visible, setVisible] = React.useState(true);
 
   const classes = useClasses();
 
@@ -40,7 +40,7 @@ function Banner(props) {
       setTimeout(() => {
         setImg(getRandomImg())
       },300)
-    }, 5000);
+    }, 15000);
 
     return () => clearInterval(timer);
   });
