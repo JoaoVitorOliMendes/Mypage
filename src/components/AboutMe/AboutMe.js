@@ -1,7 +1,9 @@
 import { Grid, Container, Paper, Box, Typography } from "@mui/material";
 import FadeIn from "../Utils/FadeIn";
+import { LazyLoadImage, trackWindowScroll } from "react-lazy-load-image-component";
 
-export default function AboutMe() {
+function AboutMe(props) {
+  const { scrollPosition } = props;
   return (
     <Box
       sx={{
@@ -62,11 +64,13 @@ export default function AboutMe() {
             }}
           >
             <FadeIn leftToRight={2}>
-              <img
-                src="https://joaovitorolimendes.github.io/Mypage/imgs/me.jpg"
-                alt="me"
+              <LazyLoadImage
+                src={process.env.PUBLIC_URL + "/imgs/me.jpg"}
+                placeholderSrc={process.env.PUBLIC_URL + "/imgs/me.jpg"}
+                alt={"me"}
                 width="100%"
                 height="100%"
+                scrollPosition={scrollPosition}
               />
             </FadeIn>
           </Grid>
@@ -75,3 +79,4 @@ export default function AboutMe() {
     </Box>
   );
 }
+export default trackWindowScroll(AboutMe);

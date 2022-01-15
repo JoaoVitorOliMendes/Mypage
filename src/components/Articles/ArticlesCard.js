@@ -6,9 +6,12 @@ import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import "./Articles.css";
+import { LazyLoadImage, trackWindowScroll } from "react-lazy-load-image-component";
 
-export default function ArticlesCard(props) {
-  const item = props.item;
+function ArticlesCard(props) {
+  const { item } = props;
+  const { scrollPosition } = props;
+
 
   const [imageLoading, setImageLoading] = useState(true);
   const [pulsing, setPulsing] = useState(true);
@@ -58,8 +61,7 @@ export default function ArticlesCard(props) {
         >
           {item.title}
         </Typography>
-        <motion.img
-          alt={item.title}
+        <motion.div
           initial={{ height: "16rem", opacity: 0 }}
           animate={{
             height: imageLoading ? "16rem" : "auto",
@@ -69,17 +71,21 @@ export default function ArticlesCard(props) {
             ({ height: { delay: 0, duration: 0.4 } },
             { opacity: { delay: 0.5, duration: 0.4 } })
           }
-          onLoad={loadingFinished}
           width="100%"
-          src={item.img}
-        />
+        >
+          <LazyLoadImage
+            onLoad={loadingFinished}
+            scrollPosition={scrollPosition}
+            src={process.env.PUBLIC_URL + item.img}
+            placeholderSrc={process.env.PUBLIC_URL + item.img}
+            alt={item.img}
+            width="100%"
+            height="100%"
+          />
+        </motion.div>
       </CardActionArea>
     </Card>
   );
 }
 
-/*<CardContent>
-  <Typography gutterBottom variant="h5" component="div" color="">
-    {item.title}
-  </Typography>
-</CardContent>*/
+export default trackWindowScroll(ArticlesCard);
