@@ -4,6 +4,7 @@ import { Box, Divider } from "@mui/material";
 import Banner from "./Banner";
 import Articles from "../Articles/Articles";
 import AboutMe from "../AboutMe/AboutMe";
+import Projects from "../Projects/Projects";
 
 const useClasses = makeStyles((theme) => ({
   imgContainer: {
@@ -24,6 +25,9 @@ export default function Home() {
       <Box className={classes.imgContainer} name="home">
         <Banner />
       </Box>
+      <div name="projects">
+        <Projects />
+      </div>
       <div name="articles">
         <Articles />
       </div>

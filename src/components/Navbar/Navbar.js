@@ -38,6 +38,16 @@ export default function Navbar() {
           </ScLink>
 
           <ScLink
+            to="projects"
+            spy={true}
+            smooth={true}
+            duration={500}
+            className="link"
+          >
+            <Typography color="secondary">Projects</Typography>
+          </ScLink>
+
+          <ScLink
             to="articles"
             spy={true}
             smooth={true}

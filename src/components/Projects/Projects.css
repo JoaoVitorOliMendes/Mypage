@@ -1,0 +1,11 @@
+.slick-dots li.slick-active button::before {
+    opacity: .75;
+    color: #ff751a;
+}
+.slick-prev::before, .slick-next::before {
+    color: #ff751a;
+}
+.cardMain {
+    padding: 5%;
+    min-height: 15rem;
+}

@@ -9,10 +9,16 @@ import articles from "../../data/articles.json";
 
 const useClasses = makeStyles((theme) => ({
   main: {
+    display: "flex",
+    alignItems: "center",
     backgroundColor: theme.palette.background.default,
     minHeight: "100vh",
     maxWidth: "100%",
     padding: "5% 15%",
+  },
+  mainInner: {
+    minWidth: "100%",
+    height: "100%"
   },
   chip: {
     margin: "0 1% !important",
@@ -47,50 +53,52 @@ export default function Articles() {
 
   return (
     <div className={classes.main}>
-      <Typography variant="h2" mb="5%" sx={{ fontStyle: "italic" }}>
-        Articles
-      </Typography>
-      <Box>
-        <Chip
-          color={subjectArray.length > 1 ? "secondary" : "primary"}
-          label="All"
-          component="button"
-          onClick={() => {
-            setSubjectArray(["Philosophy", "Logosophy"]);
-          }}
-          className={classes.chip}
-          clickable
-        />
-        <Chip
-          color={subjectArray == "Philosophy" ? "secondary" : "primary"}
-          label="Philosophy"
-          component="button"
-          onClick={() => {
-            setSubjectArray(["Philosophy"]);
-          }}
-          className={classes.chip}
-          clickable
-        />
-        <Chip
-          color={subjectArray == "Logosophy" ? "secondary" : "primary"}
-          label="Logosophy"
-          component="button"
-          onClick={() => {
-            setSubjectArray(["Logosophy"]);
-          }}
-          className={classes.chip}
-          clickable
-        />
-      </Box>
-      <XMasonry>
-        {dataArray.map((item, i) => {
-          return (
-            <XBlock key={i}>
-              <ArticlesCard item={item}></ArticlesCard>
-            </XBlock>
-          );
-        })}
-      </XMasonry>
+      <div className={classes.mainInner}>
+        <Typography variant="h2" mb="5%" sx={{ fontStyle: "italic" }}>
+          Articles
+        </Typography>
+        <Box>
+          <Chip
+            color={subjectArray.length > 1 ? "secondary" : "primary"}
+            label="All"
+            component="button"
+            onClick={() => {
+              setSubjectArray(["Philosophy", "Logosophy"]);
+            }}
+            className={classes.chip}
+            clickable
+          />
+          <Chip
+            color={subjectArray == "Philosophy" ? "secondary" : "primary"}
+            label="Philosophy"
+            component="button"
+            onClick={() => {
+              setSubjectArray(["Philosophy"]);
+            }}
+            className={classes.chip}
+            clickable
+          />
+          <Chip
+            color={subjectArray == "Logosophy" ? "secondary" : "primary"}
+            label="Logosophy"
+            component="button"
+            onClick={() => {
+              setSubjectArray(["Logosophy"]);
+            }}
+            className={classes.chip}
+            clickable
+          />
+        </Box>
+        <XMasonry>
+          {dataArray.map((item, i) => {
+            return (
+              <XBlock key={i}>
+                <ArticlesCard item={item}></ArticlesCard>
+              </XBlock>
+            );
+          })}
+        </XMasonry>
+      </div>
     </div>
   );
 }
