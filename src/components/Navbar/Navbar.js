@@ -6,6 +6,7 @@ import Typography from "@mui/material/Typography";
 import { Link as ScLink, animateScroll as scroll } from "react-scroll";
 import { useLocation, Link } from "react-router-dom";
 import "./Navbar.css";
+import { Container } from "@mui/material";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -19,55 +20,58 @@ export default function Navbar() {
 
   return (
     <AppBar position="fixed">
-      {location.pathname == "/article" ? (
-        <Toolbar className={classes.root}>
-          <Link to="/" className="link">
-            <Typography color="secondary">Home</Typography>
-          </Link>
-        </Toolbar>
-      ) : (
-        <Toolbar className={classes.root}>
-          <ScLink
-            to="home"
-            spy={true}
-            smooth={true}
-            duration={500}
-            className="link"
-          >
-            <Typography color="secondary">Home</Typography>
-          </ScLink>
+      <Container maxWidth="xl">
 
-          <ScLink
-            to="projects"
-            spy={true}
-            smooth={true}
-            duration={500}
-            className="link"
-          >
-            <Typography color="secondary">Projects</Typography>
-          </ScLink>
+        {location.pathname == "/article" ? (
+          <Toolbar className={classes.root}>
+            <Link to="/" className="link">
+              <Typography color="secondary">Home</Typography>
+            </Link>
+          </Toolbar>
+        ) : (
+          <Toolbar className={classes.root}>
+            <ScLink
+              to="home"
+              spy={true}
+              smooth={true}
+              duration={500}
+              className="link"
+            >
+              <Typography color="secondary">Home</Typography>
+            </ScLink>
 
-          <ScLink
-            to="articles"
-            spy={true}
-            smooth={true}
-            duration={500}
-            className="link"
-          >
-            <Typography color="secondary">Articles</Typography>
-          </ScLink>
+            <ScLink
+              to="projects"
+              spy={true}
+              smooth={true}
+              duration={500}
+              className="link"
+            >
+              <Typography color="secondary">Projects</Typography>
+            </ScLink>
 
-          <ScLink
-            to="aboutme"
-            spy={true}
-            smooth={true}
-            duration={500}
-            className="link"
-          >
-            <Typography color="secondary">About Me</Typography>
-          </ScLink>
-        </Toolbar>
-      )}
+            <ScLink
+              to="articles"
+              spy={true}
+              smooth={true}
+              duration={500}
+              className="link"
+            >
+              <Typography color="secondary">Articles</Typography>
+            </ScLink>
+
+            <ScLink
+              to="aboutme"
+              spy={true}
+              smooth={true}
+              duration={500}
+              className="link"
+            >
+              <Typography color="secondary">About Me</Typography>
+            </ScLink>
+          </Toolbar>
+        )}
+      </Container>
     </AppBar>
   );
 }

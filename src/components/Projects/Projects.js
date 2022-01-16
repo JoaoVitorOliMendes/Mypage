@@ -34,6 +34,28 @@ export default function Projects() {
   const classes = useClasses();
   const data = projects.projects
 
+  var settings = {
+    className: classes.slider,
+    dots: true,
+    infinite: true,
+    speed: "500",
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    centerPadding: "100px",
+    swipeToSlide: true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      }
+    ]
+  }
+
   return(
     <div className={classes.main}>
         <Box className={classes.mainInner}>
@@ -41,13 +63,7 @@ export default function Projects() {
                 Projects
             </Typography>
             <Slider
-                className={classes.slider}
-                dots={true}
-                infinite={true}
-                speed="500"
-                slidesToShow={2}
-                slidesToScroll={1}
-                centerPadding="100px"
+                {...settings}
             >
                 {
                     data.map((item, index) => {

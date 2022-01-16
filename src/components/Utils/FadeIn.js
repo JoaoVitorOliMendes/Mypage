@@ -13,7 +13,7 @@ export default function FadeIn(props) {
         visible: {
           opacity: 1,
           x: 0,
-          y: 0,
+          y: 0
         },
         hidden: {
           opacity: 0,
