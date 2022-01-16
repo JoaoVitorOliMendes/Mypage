@@ -34,7 +34,7 @@ export default function Footer() {
         <Grid container spacing={6}>
           <Grid item xs={12} md={6}>
             <Toolbar>
-              <List sx={{ width: '100%', padding: '5%' }}>
+              <List sx={{ width: '100%' }}>
                 <ListItem disablePadding>
                 <ListItemButton onClick={openWebsite.bind(this,"https://www.linkedin.com/in/jo%C3%A3o-vitor-de-oliveira-mendes-6874b11b3/")}>
                     <ListItemIcon>

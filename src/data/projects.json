@@ -2,7 +2,10 @@
     "projects": [
         {
             "name": "Polipluz",
-            "img": "/imgs/poliplux_logo.svg",
+            "img": {
+                "name": "GiOctopus",
+                "group": "gi"
+            },
             "description": "A fully functional MVP of a startup I created during my technical course in COTEMIG. The front-end was built in Angular and the Rest Back-end was built in Java using Spring Boot. Using MySql database.",
             "link": [
                 {
@@ -17,8 +20,11 @@
             "technologies": ["Java", "Spring Boot", "JWT", "Spring Security", "Maven", "Angular", "Typescript", "Html", "CSS", "Angular Materials", "Angular Google Maps", "MySql"]
         },
         {
-            "name": "Polimorfism in OOP(Object Oriented Programming) website ",
-            "img": "/imgs/oopWebsite.png",
+            "name": "Polimorfism website",
+            "img": {
+                "name": "BsCodeSlash",
+                "group": "bs"
+            },
             "description": "A interative website that explains in a intuitivew way the Polimorfism pillar of OOP.",
             "link": [
                 {
@@ -34,7 +40,10 @@
         },
         {
             "name": "Dotfiles",
-            "img": "/imgs/tux.png",
+            "img": {
+                "name": "SiLinux",
+                "group": "si"
+            },
             "description": "My current linux dotfiles. Current OS: Linux Mint dual booting with windows 10",
             "link": [
                 {
@@ -46,7 +55,10 @@
         },
         {
             "name": "My Page",
-            "img": "/imgs/react.jpg",
+            "img": {
+                "name": "SiReact",
+                "group": "si"
+            },
             "description": "This website!",
             "link": [
                 {
@@ -58,7 +70,10 @@
         },
         {
             "name": "Cadastro de Pacientes",
-            "img": "/imgs/java.jpg",
+            "img": {
+                "name": "SiJava",
+                "group": "si"
+            },
             "description": "Simple pacients register screen developed using Java Swing, Java and using Hibernate. MySql database",
             "link": [
                 {

@@ -9,3 +9,10 @@
     padding: 5%;
     min-height: 15rem;
 }
+
+
+@media only screen and (max-width: 750px) {
+    .slick-prev, .slick-next {
+        display: none !important;
+    }
+}
