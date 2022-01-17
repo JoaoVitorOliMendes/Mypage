@@ -7,14 +7,14 @@ import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
-    <>
+    <div className="overflow-hidden">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/article" element={<ArticlePage />} />
       </Routes>
       <Footer />
-    </>
+    </div>
   );
 }
 

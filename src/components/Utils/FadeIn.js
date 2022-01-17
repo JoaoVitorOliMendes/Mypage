@@ -8,7 +8,12 @@ export default function FadeIn(props) {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
-      transition={{ duration: 0.5 }}
+      transition={{ 
+        duration: 0.5,
+        type: "spring",
+        delay: 0.5,
+        stiffness: 80
+      }}
       variants={{
         visible: {
           opacity: 1,
