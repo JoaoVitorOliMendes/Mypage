@@ -1,5 +1,5 @@
 import * as React from "react"
-import { Box, Button, Card, CardActions, CardContent, CardMedia, Typography } from "@mui/material";
+import { Box, Button, Card, CardActions, CardContent, CardMedia, Chip, Typography } from "@mui/material";
 import "./Projects.css"
 import lazy from 'react-lazy-named';
 
@@ -44,11 +44,16 @@ export default function ProjectsCard(props) {
                                 <Typography gutterBottom variant="h3" component="div">
                                     { project.name }
                                 </Typography>
-                                <Icon size="2rem"></Icon>
+                                <Icon size="2em"></Icon>
                             </Box>
-                            <Typography variant="body2">
+                            <Typography variant="body2" mb="1em">
                                 { project.description }
                             </Typography>
+                            { project.technologies.map((item, index) => {
+                                return (
+                                    <Chip color="secondary" sx={{margin: "0.5em"}} label={item} key={index} />
+                                )
+                            }) }
                         </CardContent>
                         <CardActions
                             sx={{
