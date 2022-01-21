@@ -20,6 +20,25 @@
             "technologies": ["Java", "Spring Boot", "JWT", "Spring Security", "Maven", "Angular", "Typescript", "Html", "CSS", "Angular Materials", "Angular Google Maps", "MySql"]
         },
         {
+            "name": "Dio Spring Boot",
+            "img": {
+                "name": "SiSpring",
+                "group": "si"
+            },
+            "description": "Spring Boot application developed in Dio GFT Start #3 Java, using design patterns learned in the same bootcamp",
+            "link": [
+                {
+                    "name": "GitHub",
+                    "link": "https://github.com/JoaoVitorOliMendes/DioSpringBootRest"
+                },
+                {
+                    "name": "Linkedin",
+                    "link": "https://joaovitorolimendes.github.io/sitePOO"
+                }
+            ],
+            "technologies": ["Spring Boot", "Swagger2", "Feign", "Spring Cloud", "Spring Data", "Lombok", "H2", "Gson", "Maven"]
+        },
+        {
             "name": "Polimorfism website",
             "img": {
                 "name": "BsCodeSlash",
@@ -67,6 +86,21 @@
                 }
             ],
             "technologies": ["React", "React-Router", "Mui", "Javascript", "HTML", "CSS"]
+        },
+        {
+            "name": "Java Design Patterns",
+            "img": {
+                "name": "SiJava",
+                "group": "si"
+            },
+            "description": "Pure Java application developed while studying desing patterns in Java, Facade, Singleton, Strategy",
+            "link": [
+                {
+                    "name": "GitHub",
+                    "link": "https://github.com/JoaoVitorOliMendes/JavaDesignPatterns"
+                }
+            ],
+            "technologies": ["Java", "Design Patterns", "Facade", "Singleton", "Strategy"]
         },
         {
             "name": "Cadastro de Pacientes",
