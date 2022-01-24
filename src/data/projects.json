@@ -88,6 +88,21 @@
             "technologies": ["React", "React-Router", "Mui", "Javascript", "HTML", "CSS"]
         },
         {
+            "name": "Php Rest API",
+            "img": {
+                "name": "SiPhp",
+                "group": "si"
+            },
+            "description": "Simple Php rest api using MongoDb and Composer Dependency Manager, exploring design patterns and OOP in Php",
+            "link": [
+                {
+                    "name": "GitHub",
+                    "link": "https://github.com/JoaoVitorOliMendes/phpMongoRestApi"
+                }
+            ],
+            "technologies": ["Php", "Design Patterns", "MongoDb", "Singleton", "Composer", "Rest"]
+        },
+        {
             "name": "Java Design Patterns",
             "img": {
                 "name": "SiJava",
