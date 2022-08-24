@@ -39,6 +39,25 @@
             "technologies": ["Spring Boot", "Swagger2", "Feign", "Spring Cloud", "Spring Data", "Lombok", "H2", "Gson", "Maven"]
         },
         {
+            "name": "PMusic",
+            "img": {
+                "name": "FaPython",
+                "group": "fa"
+            },
+            "description": "Python console application to control youtube-dl song playlists. Queries songs through youtube-dl and plays them using vlc media player, all via command line",
+            "link": [
+                {
+                    "name": "GitHub",
+                    "link": "https://github.com/JoaoVitorOliMendes/PMusic"
+                },
+                {
+                    "name": "Pypi - Soon",
+                    "link": "#"
+                }
+            ],
+            "technologies": ["Python", "youtube-dl", "VLC"]
+        },
+        {
             "name": "Polimorfism website",
             "img": {
                 "name": "BsCodeSlash",
@@ -88,6 +107,21 @@
             "technologies": ["React", "React-Router", "Mui", "Javascript", "HTML", "CSS"]
         },
         {
+            "name": "extEuclidian",
+            "img": {
+                "name": "TbMathSymbols",
+                "group": "tb"
+            },
+            "description": "Python script to calculate mdc, largest number coefficient and smallest number coefficient. Useful to encript messages using RSA",
+            "link": [
+                {
+                    "name": "GitHub",
+                    "link": "https://github.com/JoaoVitorOliMendes/extEuclidian"
+                }
+            ],
+            "technologies": ["Python", "RSA cryptosystem"]
+        },
+        {
             "name": "Php Rest API",
             "img": {
                 "name": "SiPhp",
@@ -116,6 +150,21 @@
                 }
             ],
             "technologies": ["Java", "Design Patterns", "Facade", "Singleton", "Strategy"]
+        },
+        {
+            "name": "Wordle clone",
+            "img": {
+                "name": "RiBook2Fill",
+                "group": "ri"
+            },
+            "description": "Wordle clone feito durante meus estudos na linguagem Python, totalmente em português",
+            "link": [
+                {
+                    "name": "GitHub",
+                    "link": "https://github.com/JoaoVitorOliMendes/Wordle"
+                }
+            ],
+            "technologies": ["Python", "colorama", "unicode", "wasabi"]
         },
         {
             "name": "Cadastro de Pacientes",
