@@ -49,6 +49,56 @@
       "id": 9,
       "author": "u/alonemushroom",
       "img": "/banner/10.jpg"
+    },
+    {
+      "id": 10,
+      "author": "u/FoxPiano",
+      "img": "/banner/11.jpg"
+    },
+    {
+      "id": 11,
+      "author": "u/myriyevskyy",
+      "img": "/banner/12.jpg"
+    },
+    {
+      "id": 12,
+      "author": "u/therealgrantperryart",
+      "img": "/banner/13.jpg"
+    },
+    {
+      "id": 13,
+      "author": "u/Tetro123",
+      "img": "/banner/14.jpg"
+    },
+    {
+      "id": 14,
+      "author": "u/oteshfashion",
+      "img": "/banner/15.jpg"
+    },
+    {
+      "id": 15,
+      "author": "u/ipaintfishes",
+      "img": "/banner/16.png"
+    },
+    {
+      "id": 16,
+      "author": "u/Lova___",
+      "img": "/banner/17.jpg"
+    },
+    {
+      "id": 17,
+      "author": "u/IndyaBendya",
+      "img": "/banner/18.jpg"
+    },
+    {
+      "id": 18,
+      "author": "u/matarrwolfenstein",
+      "img": "/banner/19.jpg"
+    },
+    {
+      "id": 19,
+      "author": "u/RyaaaBur",
+      "img": "/banner/20.jpg"
     }
   ]
 }

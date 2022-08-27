@@ -23,7 +23,7 @@ const useClasses = makeStyles((theme) => ({
 const bannersJson = banners.banners;
 
 function getRandomImg() {
-  const index = Math.floor(Math.random() * 10);
+  const index = Math.floor(Math.random() * bannersJson.length);
   return bannersJson[index];
 }
 
