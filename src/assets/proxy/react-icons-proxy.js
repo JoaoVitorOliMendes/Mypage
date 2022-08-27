@@ -19,6 +19,7 @@ const ReactIconsIm = require('react-icons/im');
 const ReactIconsBi = require('react-icons/bi');
 const ReactIconsCg = require('react-icons/cg');
 const ReactIconsVsc = require('react-icons/vsc');
+const ReactIconsTb = require('react-icons/tb');
 
 const exportedIcons = {
   ...ReactIconsFa,
@@ -41,6 +42,7 @@ const exportedIcons = {
   ...ReactIconsBi,
   ...ReactIconsCg,
   ...ReactIconsVsc,
+  ...ReactIconsTb
 };
 
 Object.keys(ReactIconsIoLegacy).forEach(k => {
@@ -23263,3 +23265,4 @@ export const IoMdWater = exportedIcons.IoMdWater;
 export const IoMdWifi = exportedIcons.IoMdWifi;
 export const IoMdWine = exportedIcons.IoMdWine;
 export const IoMdWoman = exportedIcons.IoMdWoman;
+export const TbMathSymbols = exportedIcons.TbMathSymbols;
