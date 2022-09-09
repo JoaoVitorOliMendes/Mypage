@@ -8,26 +8,6 @@ body {
   background-color: #111;
 }
 
-/* width */
-body::-webkit-scrollbar {
- width: 10px;
-}
-
-/* Track */
-body::-webkit-scrollbar-track {
- background: #ff751a;
-}
-
-/* Handle */
-body::-webkit-scrollbar-thumb {
- background: #ff751a;
-}
-
-/* Handle on hover */
-body::-webkit-scrollbar-thumb:hover {
- background: #ff751a;
-} 
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -35,4 +15,25 @@ code {
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+
+
+* {
+  scrollbar-width: auto !important;
+  scrollbar-color: #ff751a #282c34 !important;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #282c34;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #ff751a;
+  border-radius: 20px;
 }

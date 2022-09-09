@@ -9,7 +9,7 @@ import Projects from "../Projects/Projects";
 const useClasses = makeStyles((theme) => ({
   imgContainer: {
     display: "flex",
-    height: "100vh",
+    height: "105vh",
     width: "100%",
     flexDirection: "column",
     alignItems: "center",

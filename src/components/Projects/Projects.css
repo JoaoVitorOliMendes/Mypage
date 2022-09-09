@@ -9,6 +9,31 @@
     padding: 5%;
     min-height: 15rem;
 }
+.mainSection {
+  position: relative;
+}
+
+.custom-shape-divider-bottom-1662757906 {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1662757906 svg {
+    position: relative;
+    display: block;
+    width: calc(110% + 1.3px);
+    height: 40px;
+}
+
+.custom-shape-divider-bottom-1662757906 .shape-fill {
+    fill: #D6D3D5;
+}
+
 
 
 @media only screen and (max-width: 750px) {

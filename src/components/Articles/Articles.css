@@ -12,6 +12,31 @@ img {
   display: block;
   transition: height 500ms ease-in-out;
 }
+.mainSection {
+  position: relative;
+}
+
+.custom-shape-divider-bottom-1662758412 {
+  position: absolute;
+  top: -60px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1662758412 svg {
+  position: relative;
+  display: block;
+  width: calc(130% + 1.3px);
+  height: 60px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1662758412 .shape-fill {
+  fill: #000000;
+}
 
 @keyframes pulse {
   0%,
