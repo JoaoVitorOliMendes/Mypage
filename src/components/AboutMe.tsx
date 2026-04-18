@@ -1,4 +1,3 @@
-import Image from "next/image";
 import FadeIn from "./FadeIn";
 
 export default function AboutMe() {
@@ -48,7 +47,7 @@ export default function AboutMe() {
         <div className="md:col-span-5 flex items-center justify-center">
           <FadeIn>
             <div className="border border-white/[0.08] rounded-sm overflow-hidden transition-all duration-500 hover:border-accent">
-              <Image
+              <img
                 src="/imgs/me.jpg"
                 alt="João Vitor"
                 width={500}

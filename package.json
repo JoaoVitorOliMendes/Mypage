@@ -3,26 +3,35 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "dev": "vinext dev",
+    "build": "vinext build",
+    "start": "vinext start",
+    "dev:vinext": "vite dev --port 3001",
+    "build:vinext": "vite build"
   },
   "dependencies": {
-    "next": "^15.1.0",
     "openseadragon": "^6.0.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-icons": "^5.4.0"
   },
   "devDependencies": {
+    "@cloudflare/vite-plugin": "^1.32.3",
     "@types/node": "^22.0.0",
     "@types/openseadragon": "^5.0.2",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^4.7.0",
+    "@vitejs/plugin-rsc": "^0.5.24",
     "autoprefixer": "^10.4.0",
     "postcss": "^8.4.0",
+    "react-server-dom-webpack": "^19.2.5",
     "tailwindcss": "^3.4.0",
-    "typescript": "^5.7.0"
-  }
+    "tsx": "^4.21.0",
+    "typescript": "^5.7.0",
+    "vinext": "^0.0.7",
+    "vite": "^7.3.2",
+    "wrangler": "^4.83.0"
+  },
+  "type": "module"
 }
