@@ -1,9 +1,7 @@
-import { NextRequest, NextResponse } from "next/server";
-
 const IIIF_BASE = "https://www.artic.edu/iiif/2";
 
 export async function GET(
-  _request: NextRequest,
+  _request: Request,
   { params }: { params: Promise<{ path: string[] }> }
 ) {
   const { path } = await params;
@@ -17,7 +15,7 @@ export async function GET(
     });
 
     if (!res.ok) {
-      return new NextResponse(null, { status: res.status });
+      return new Response(null, { status: res.status });
     }
 
     const contentType = res.headers.get("content-type") || "application/octet-stream";
@@ -30,8 +28,8 @@ export async function GET(
     if (contentLength) headers["Content-Length"] = contentLength;
 
     // Stream the response body instead of buffering
-    return new NextResponse(res.body, { headers });
+    return new Response(res.body, { headers });
   } catch {
-    return new NextResponse(null, { status: 502 });
+    return new Response(null, { status: 502 });
   }
 }

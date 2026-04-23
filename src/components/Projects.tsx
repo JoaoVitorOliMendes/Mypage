@@ -176,6 +176,7 @@ export default function Projects() {
   }, [snapshotPositions]);
 
   const onPointerDown = useCallback((e: React.PointerEvent, i: number) => {
+    if (e.pointerType === "touch") return;
     if ((e.target as HTMLElement).closest("a")) return;
     pending.current = true;
     pendingIdx.current = i;

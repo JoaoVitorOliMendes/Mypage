@@ -1,4 +1,4 @@
-import { NextResponse } from "next/server";
+
 
 const CREDLY_USER_ID = "698e5384-587a-440a-873a-77e88178be99";
 
@@ -10,14 +10,14 @@ export async function GET() {
     );
 
     if (!res.ok) {
-      return NextResponse.json({ data: [] }, { status: res.status });
+      return Response.json({ data: [] }, { status: res.status });
     }
 
     const json = await res.json();
-    return NextResponse.json(json, {
+    return Response.json(json, {
       headers: { "Cache-Control": "public, max-age=86400" },
     });
   } catch {
-    return NextResponse.json({ data: [] }, { status: 502 });
+    return Response.json({ data: [] }, { status: 502 });
   }
 }
